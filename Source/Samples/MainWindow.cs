@@ -14,7 +14,7 @@ namespace Samples
         private TreeView _treeView;
         private Box _boxContent;
         private TreeStore _store;
-        private Dictionary<string, (Type type, Widget widget)> _items;
+        private Dictionary<string, Tuple<Type, Widget>> _items;
         private TextView _textViewCode;
         private Notebook _notebook;
 
@@ -87,7 +87,7 @@ namespace Samples
                 {
                     _notebook.ShowTabs = true;
 
-                    if (item.widget == null)
+                    if (item.Item2 == null)
                         _items[s] = item = (item.type, Activator.CreateInstance(item.type) as Widget);
 
                     using (var stream = typeof(ListSection).Assembly.GetManifestResourceStream("GtkSharp.Samples." + item.type.Name + ".cs"))

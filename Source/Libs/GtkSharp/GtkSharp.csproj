@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net452</TargetFramework>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <PackageIconUrl>https://raw.githubusercontent.com/GtkSharp/GtkSharp/develop/Source/Libs/GtkSharp/Icon.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/GtkSharp/GtkSharp</PackageProjectUrl>

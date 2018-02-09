@@ -1,5 +1,5 @@
 
-enum Library
+public enum Library
 {
     GLib,
     GObject,
